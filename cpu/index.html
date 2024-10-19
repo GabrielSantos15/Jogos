@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogBall</title>
+    <link rel="shortcut icon" href="dogArt/icone (2).png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onresize="tela()">
+    <main>
+        <header>
+            <img src="dogArt/logo.png" alt="Logo">
+            <div>
+                <h2><span id="placar1">2</span>:<span id="placar2">3</span></h2>
+            </div>
+            <button type="checkbox" onclick="darkMode()"><span></span></button>
+        </header>
+            <div id="gameOver" class="hidden">
+                <h3>CPU Wins!</h3>
+                <span onclick="location.reload()" class="material-icons">
+                    play_circle_filled
+                </span>
+            </div>
+            <!-- TELA -->
+            <canvas id="tela">Infelizmente não foi possivel carregar o jogo</canvas>
+    </main>
+
+</body>
+<script src="classes.js"></script>
+<script src="index.js"></script>
+
+</html>

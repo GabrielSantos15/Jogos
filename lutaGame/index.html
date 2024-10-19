@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Luta de espadas</title>
+</head>
+
+<body>
+    <section>
+        <!-- barra de vida -->
+        <div id="painel-vida">
+            <div class="barra-vida">
+                <div id="j1-life" class="porcentagem-vida"></div>
+            </div>
+            <div id="timer"></div>
+            <div class="barra-vida">
+                <div id="j2-life" class="porcentagem-vida"></div>
+            </div>
+        </div>
+        <!-- tela de vitoria -->
+        <div id="displayText" >
+            <h3>empate</h3>
+            <span onclick="recarregar()" class="material-icons">
+                play_circle_filled
+            </span>
+        </div>
+        <!-- TELA -->
+        <canvas></canvas>
+    </section>
+    <script src="luta.js"></script>
+    <script src="classe.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

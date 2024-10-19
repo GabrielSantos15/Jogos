@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiro</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <!-- java script -->
+    <script src="mobs.js" defer></script>
+    <script src="classes.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body onresize="size()">
+    <main>
+        <section id="homePage">
+            <article class="card">
+                <h1>Apocalipse</h1>
+                <p>Você está pronto para enfrentar o apocalipse? Neste jogo, você é o único sobrevivente de uma
+                    catástrofe global que transformou o mundo em um caos. Você tem que lutar contra hordas de monstros
+                    terríveis, como esqueletos, goblins, olhos voadores, cogumelos humanoides e cachorros demoníacos.
+                    Você tem apenas uma arma para se defender. Será que você conseguirá escapar do inferno na Terra?</p>
+                <button class="button" onclick="play()">JOGAR</button>
+            </article>
+        </section>
+        <section id="headerGame">
+            <article id="life-bar">
+                <picture>
+                    <img src="imagens/jogador/playerLogo.jpg" alt="">
+                </picture>
+                <article id="life">
+                    <div></div>
+                </article>
+            </article>
+            <article>
+                <output id="point">000</output>
+            </article>
+        </section>
+        <section id="gameOver" class="hidden">
+            <article class="card">
+                <h2>Game Over</h2>
+                <div id="statusGame">
+                    <span>
+                        <label for="pontuacao">Pontuação:</label>
+                        <output id="pontuacao">000</output>
+                    </span>
+                    <span>
+                        <label for="recorde">Recorde:</label>
+                        <output id="recorde">000</output>
+                    </span>
+                    <span>
+                        <label for="kills">Kills:</label>
+                        <output id="kills">10</output>
+                    </span>
+                </div>
+                <div id="refresh">
+                    <span onclick="location.reload()" class="material-symbols-outlined button">
+                        refresh
+                    </span>
+                </div>
+            </article>
+        </section>
+
+        <div id="vinheta"></div>
+        <canvas id="game"></canvas>
+
+    </main>
+</body>
+
+</html>
